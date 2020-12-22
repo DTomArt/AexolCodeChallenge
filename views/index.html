@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css" integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g==" crossorigin="anonymous" />
+    <title>Send sms</title>
+</head>
+<body>
+    <div class="container">
+        <h2><Strong>Send SMS</Strong></h2>
+        <input type="text" name="sender" id="from" placeholder="From whom the message is...">
+        <input type="tel" name="number" id="number" placeholder="Enter receiver...">
+        <input type="text" name="msg" id="msg" placeholder="Enter your text message...">
+        <input type="button" id="button" value="Send Text" class="button">
+        <!-- <button class="button button-outline">Outlined Button</button> -->
+        <p class ="response"></p>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
